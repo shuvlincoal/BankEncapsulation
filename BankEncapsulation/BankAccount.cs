@@ -27,5 +27,10 @@ namespace BankEncapsulation
             return balanace;
         }
 
+        public void WithDraw(double deposit)
+        {
+            balanace -= deposit;
+        }
+
     }
 }
