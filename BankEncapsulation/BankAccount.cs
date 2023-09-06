@@ -10,7 +10,7 @@ namespace BankEncapsulation
     {
 
         //Fields use camel casing
-        private double balanace = 1000;
+        private double _balanace = 1000;
 
         //Property
         //public double balance { get; set; }
@@ -18,18 +18,18 @@ namespace BankEncapsulation
 
         public void Deposit(double deposit)
         {
-            balanace += deposit;
+            _balanace += deposit;
         }
 
         public double GetBalance()
         {
             //Console.WriteLine($"Your Balance is: {balanace}");
-            return balanace;
+            return _balanace;
         }
 
         public void WithDraw(double deposit)
         {
-            balanace -= deposit;
+            _balanace -= deposit;
         }
 
     }
